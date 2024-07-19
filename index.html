@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
+    <title>Astrologia - Znaki Zodiaku</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Witamy na mojej stronie!</h1>
+        <h1>Astrologia</h1>
     </header>
     <main>
-        <p>To jest przykładowa strona internetowa stworzona od podstaw.</p>
+        <label for="zodiac-signs">Wybierz swój znak zodiaku:</label>
+        <select id="zodiac-signs" onchange="displayZodiacInfo()">
+            <option value="">-- Wybierz znak --</option>
+            <option value="aries">Baran</option>
+            <option value="taurus">Byk</option>
+            <option value="gemini">Bliźnięta</option>
+            <option value="cancer">Rak</option>
+            <option value="leo">Lew</option>
+            <option value="virgo">Panna</option>
+            <option value="libra">Waga</option>
+            <option value="scorpio">Skorpion</option>
+            <option value="sagittarius">Strzelec</option>
+            <option value="capricorn">Koziorożec</option>
+            <option value="aquarius">Wodnik</option>
+            <option value="pisces">Ryby</option>
+        </select>
+        <div id="zodiac-info"></div>
     </main>
     <footer>
-        <p>&copy; 2024 Moja Strona</p>
+        <p>&copy; 2024 Astrologia</p>
     </footer>
     <script src="script.js"></script>
 </body>
